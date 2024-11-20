@@ -8,6 +8,6 @@ export class LocationService {
   constructor() { }
 
   async getCurrentPosition() {
-    return await Geolocation.getCurrentPosition();
+    return (await Geolocation.getCurrentPosition()).coords;
   }
 }
